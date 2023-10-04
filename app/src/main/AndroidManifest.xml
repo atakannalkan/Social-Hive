@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.socialhive">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- android:hardwareAccelerated="false"
+        android:largeHeap="true" -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="Social Hive"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SocialHive">
+
+        <!-- "Values > themes.xml" Dosyasında Oluşturduğum Temamı burada çağırdım ! -->
+        <activity
+            android:name=".view.UserPostsActivity"
+            android:theme="@style/Theme.SocialHive.OtherPages"
+            android:exported="false" />
+        <!-- "Values > themes.xml" Dosyasında Oluşturduğum Temamı burada çağırdım ! -->
+        <activity
+            android:name=".view.UploadActivity"
+            android:theme="@style/Theme.SocialHive.OtherPages"
+            android:exported="false" />
+        <!-- "Values > themes.xml" Dosyasında Oluşturduğum Temamı burada çağırdım ! -->
+        <activity
+            android:name=".view.HomeActivity"
+            android:theme="@style/Theme.SocialHive.OtherPages"
+            android:exported="false" />
+
+        <!-- "Values > themes.xml" Dosyasında Oluşturduğum Temamı burada çağırdım ! -->
+        <activity
+            android:name=".view.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SocialHive">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

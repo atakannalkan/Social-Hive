@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home_items"
+        android:title="Çıkış Yap"
+        android:icon="@drawable/menu_icon"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/user_own_posts"
+                android:title="Gönderilerim"
+                android:icon="@drawable/menu_my_posts"
+                app:showAsAction="ifRoom">
+
+            </item>
+            <item
+                android:id="@+id/add_post"
+                android:title="Gönderi Ekle"
+                android:icon="@drawable/menu_add_post"
+                app:showAsAction="ifRoom">
+            </item>
+            <item
+                android:id="@+id/user_logout"
+                android:title="Çıkış Yap"
+                android:icon="@drawable/menu_exit"
+                app:showAsAction="ifRoom">
+            </item>
+
+        </menu>
+
+    </item>
+
+</menu>

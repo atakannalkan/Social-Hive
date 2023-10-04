@@ -1,0 +1,61 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'com.google.gms.google-services' // Firebase Plugin.
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.example.socialhive"
+        minSdk 24
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures { // Eklendi !
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
+    implementation platform('com.google.firebase:firebase-bom:31.2.3') // Firebase Plugin.
+
+    implementation 'com.google.firebase:firebase-analytics-ktx' // Firebase Plugin (Analytics)
+    implementation 'com.google.firebase:firebase-auth-ktx' // Firebase Plugin (Authentication)
+    implementation 'com.google.firebase:firebase-firestore-ktx' // Firebase Plugin (Firestore)
+    implementation 'com.google.firebase:firebase-storage-ktx' // Firebase Plugin (Storage)
+
+
+    implementation 'com.squareup.picasso:picasso:2.8' // Picasso Framework (To Show The Pictures)
+
+}
