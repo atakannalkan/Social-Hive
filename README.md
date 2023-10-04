@@ -26,4 +26,4 @@ Bu sayede kullanmış olduğunuz **"Firebase"** Veri Tabanı ile uygulama arası
 Uygulamanın tanıtım videosuna ve son sürüm APK dosyasına aşağıdaki bağlantılardan ulaşabilirsiniz:
 
 - Uygulamanın Tanıtım Videosu: **[Social Hive Tanıtım Videosu](https://youtu.be/EhNzU07TraM)**  
-- Uygulamanın APK Versiyonu: **[Social Hive (Son Sürüm) APK İndir](https://drive.google.com/drive/folders/1fgkq-8pryWihTXgWKZnXtRIlnaNKhwvt?usp=drive_link)**
+- Uygulamanın APK Versiyonu: **[Social Hive APK İndir](https://drive.google.com/drive/folders/1fgkq-8pryWihTXgWKZnXtRIlnaNKhwvt?usp=drive_link)**
